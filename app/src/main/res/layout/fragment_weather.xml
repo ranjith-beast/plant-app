@@ -22,8 +22,7 @@
         <Spinner
             android:id="@+id/state"
             android:layout_width="match_parent"
-            android:layout_height="43dp"
-            android:background="#FFFFFF" />
+            android:layout_height="42dp" />
 
         <TextView
             android:id="@+id/textView7"

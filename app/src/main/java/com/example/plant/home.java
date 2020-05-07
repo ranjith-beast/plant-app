@@ -22,7 +22,7 @@ public class home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        RecyclerView recycler= this.<RecyclerView>findViewById(R.id.recycler);
+        RecyclerView recycler= this.findViewById(R.id.recycler);
         b1=findViewById(R.id.b1);
         recycler.setLayoutManager(new LinearLayoutManager(this));
 //        String[] data={"Apple","Pineapple","Banana","Mango","Paddy","Corn","Chilli","Beans"};

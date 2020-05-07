@@ -36,8 +36,8 @@ public class IntroductionActivity extends AppCompatActivity {
         introPageAdapter=new IntroPageAdapter(this,mlist);
         viewPager.setAdapter(introPageAdapter);
 
-        linearLayout=(LinearLayout) findViewById(R.id.c2);
-        bt1=(Button)findViewById(R.id.bt1);
+        linearLayout= findViewById(R.id.c2);
+        bt1= findViewById(R.id.bt1);
         adddots(0);
 
         viewPager.addOnPageChangeListener(viewlistener);

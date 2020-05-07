@@ -36,11 +36,11 @@ public class disease_details extends AppCompatActivity {
 //        String[] parts= Disease_Name.split("__"); //returns an array with the 2 parts
 //        Disease_Name = parts[1];
         Log.d("disease_name",p.getString("disease"));
-       final TextView disease_Name=(TextView) findViewById(R.id.dname);
-       final TextView description=(TextView) findViewById(R.id.description);
-       final TextView reason=(TextView) findViewById(R.id.reason);
-       final TextView methods=(TextView)findViewById(R.id.methods);
-       final ImageView image=(ImageView)findViewById(R.id.disease_image);
+       final TextView disease_Name= findViewById(R.id.dname);
+       final TextView description= findViewById(R.id.description);
+       final TextView reason= findViewById(R.id.reason);
+       final TextView methods= findViewById(R.id.methods);
+       final ImageView image= findViewById(R.id.disease_image);
         disease_Name.setText(Disease_Name);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, ROOT_URL,
                 new Response.Listener<String>() {
@@ -73,8 +73,6 @@ public class disease_details extends AppCompatActivity {
                     }
                 },
                 new Response.ErrorListener() {
-
-
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //  loading.dismiss();

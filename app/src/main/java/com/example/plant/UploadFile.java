@@ -106,7 +106,7 @@ public class UploadFile extends AppCompatActivity {
             if (filePath != null) {
                 try {
 
-                    Log.d("filePath", String.valueOf(filePath));
+                    Log.d("filePath", filePath);
                     bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), picUri);
 
                         Log.d("bitmap", String.valueOf(bitmap));
